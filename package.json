@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-image": "^4.2.0",
+    "gulp-jade": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.2.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"hello my friend!\""
+  },
+  "author": "",
+  "license": "ISC"
+}
