@@ -1,0 +1,17 @@
+div.parent
+    div.block
+        div.head
+            div.logo
+                p(class='m') M
+            div.bars    
+                img(src="img/1.png")
+        div.block_Text
+            div.Name  
+                p(class='name_Text')  MODERNO
+            div.Middle    
+                p(class='Middle_Text')    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                p(class='Middle_Text2') Curabitur eu velit nulla. 
+            button(class='Text_Button')  Get in Touch        
+script.
+ $('.Middle_Text').waypoint(function(){this.element.classList.add('addressAppearAnimation')}, {offset:"60%"});   
+ $('.Middle_Text2').waypoint(function(){this.element.classList.add('addressAppearAnimation')}, {offset:"60%"});                     

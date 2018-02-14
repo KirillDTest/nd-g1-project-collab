@@ -1,0 +1,21 @@
+.contactsBlockSignFormBtn {
+	width: 100%;
+	height: 51px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffffff;
+	background-color: #fa694e;
+	border: none;
+}
+
+@media screen and (max-width: 992px) {
+	.contactsBlockSignFormBtn {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.contactsBlockSignFormBtn {
+		height: 35px;
+	}
+}

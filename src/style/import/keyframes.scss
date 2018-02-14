@@ -1,0 +1,34 @@
+@keyframes popUp {
+    from{
+        opacity: 0;
+        font-size: 0px;
+    }
+    to{
+        opacity: 1;
+        font-size: 25px;
+    }
+}
+
+@keyframes transAnimate {                      
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate {
+animation-name: popUp;
+animation-duration:2s;
+opacity: 1;
+}
+
+.addressAppearAnimation {
+animation-name: transAnimate;
+animation-duration:1.5s;
+opacity: 1;
+}
