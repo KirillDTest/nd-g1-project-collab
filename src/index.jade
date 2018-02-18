@@ -11,11 +11,72 @@ html(lang="en")
         link(href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet")
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js')
+    style.
+        @keyframes menu {
+            from {
+
+        }
+
+
+            to {
+                right: 0;
+            }   
+        }
+
+        @keyframes menuRev {
+            from {
+                right: 0;
+            }
+
+            to {
+
+            }
+        }
+        .no1 {
+            animation-name: menu;
+        }
+
+        .no2 {
+            animation-name: menuRev;
+        }   
     body
         include includes/Glavnaya.jade
         include includes/services.jade
         //- include includes/_content.jade
         include includes/_contacts.jade
         include includes/footer.jade
+        include includes/menu.jade
+    script.
+        btn.addEventListener('click', function(){
+            menuAnimate.classList.add('no2')
+            menuAnimate.classList.remove('no1')
+        })
+        btn1.addEventListener('click', function(){
+            menuAnimate.classList.add('no1')
+            menuAnimate.classList.remove('no2')
+        }) 
+
+        $("#home").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#homes").offset().top
+            }, 500);
+        });
+        $("#services").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#services-container").offset().top
+            }, 500);
+        });
+        $("#stories").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 500);
+        });
+        $("#contact").click(function(){
+            $('html, body').animate({
+                scrollTop: $("#connect").offset().top
+            }, 500);
+        });
+
+
         
-   
+                  
