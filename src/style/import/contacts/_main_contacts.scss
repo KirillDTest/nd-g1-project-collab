@@ -1,0 +1,146 @@
+
+* {
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes blocktitleAppear {                      
+			from {
+				opacity: 0;
+				font-size: 0px;
+			}
+
+			to {
+				opacity: 1;
+				font-size: 25px;
+			}
+		}
+
+@keyframes addressAppear {                      
+			from {
+				opacity: 0;
+				transform: translateY(500px);
+			}
+
+			to {
+				opacity: 1;
+				transform: none;
+			}
+		}
+
+
+
+.contacts {
+	width: 1170px;
+	height: 925px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.contacts {
+		width: 80%;
+		height: auto;
+		display: flex;
+
+		& > * {
+			margin-top: 10px;
+		}
+	}
+}
+
+.contactsHead {
+	width: 255px;
+	height: 64px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 400;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+	opacity:0;
+	
+	&>p {
+		text-align: center;
+		font-size: 15px;
+		font-weight: 400;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.contactsHead {
+		&>p {
+			margin-top: -32px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contactsHead {
+		font-size: 4vw;
+
+		&>p {
+			margin-top: -30px;
+		}
+}
+}
+
+@media screen and (max-width: 576px) {
+	.contactsHead {
+		font-size: 6vw;
+		width: 80%;
+
+		// &>p {
+		// 	margin-top: -30px;
+		// }
+}
+}
+
+
+#contactsMap {
+	width: 100%;
+	height: 301px;
+	background-color: #808080;
+}
+
+@media screen and (max-width: 768px) {
+	.contactsMap {
+		width: 100%;
+		height: 200px;	
+}
+}
+
+.animate_1200-992 {
+	animation-name: blocktitleAppear;
+	animation-duration:1s;
+	opacity: 1;
+}
+
+
+@import 'contactsBlock/_contactsBlock.scss';
+@import 'contactsBlock/contactsBlockInformation/_contactsBlockInformation.scss';
+@import 'contactsBlock/contactsBlockInformation/contactsBlockInformationAddress/_contactsBlockInformationAddress.scss';
+@import 'contactsBlock/contactsBlockInformation/contactsBlockInformationAddress/_contactsBlockInformationTitle.scss';
+@import 'contactsBlock/contactsBlockInformation/contactsBlockInformationAddress/_contactsBlockInformationText.scss';
+
+
+
+@import 'contactsBlock/contactsBlockSign/_contactsBlockSign.scss';
+@import 'contactsBlock/contactsBlockSign/contactsBlockSignForm/_contactsBlockSignForm.scss';
+@import 'contactsBlock/contactsBlockSign/contactsBlockSignForm/_contactsBlockSignFormPole1.scss';
+@import 'contactsBlock/contactsBlockSign/contactsBlockSignForm/_contactsBlockSignFormPole2.scss';
+@import 'contactsBlock/contactsBlockSign/contactsBlockSignForm/_contactsBlockSignFormPole3.scss';
+@import 'contactsBlock/contactsBlockSign/contactsBlockSignForm/_contactsBlockSignFormBtn.scss';
+
+
+.addressAppearAnimation {
+	animation-name: addressAppear;
+	animation-duration:1s;
+	opacity: 1;
+}
