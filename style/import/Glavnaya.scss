@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.parent {
+    height: 900px;
+    width: 100%;
+    background-color: #333333;
+    opacity: 0.8;
+    display:flex;
+    justify-content: center;
+}
+
+.block {
+    height: 579px;
+    width: 1153px;
+    padding-top: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.head {
+    width: 1153px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.logotype {
+    width: 88px;
+    height: 88px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.m{
+    color:  #333333;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.fa-align-justify {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.block_Text {
+    width: 522px;
+    height: 304px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.Name {
+    height: 55px;
+    width: 415px;
+    display: flex;
+    align-self: center;
+}
+.name_Text {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 75px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+.Midlle {
+    height: 50px;
+    width: 522px;
+}
+.Middle_Text {
+    color: #ffffff;
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Lora;
+}
+.Middle_Text2 {
+    text-align: center;
+    color: #ffffff;
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Lora;
+}
+button {
+    width: 257px;
+    height: 59px;
+    display:flex;
+    align-self: center;
+    background-color: #fa694e;
+}
+.Text_Button {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 62px;
+}
+.bars {
+    width:30px;
+    height: 30px;
+}
+img {
+    height: 30px;
+    width: 30px;
+}
+@media screen and (max-width: 1920px){
+    .parent {
+        width: 100%;
+    }
+    .head {
+    width: 100%;
+    justify-content: space-around;
+}}
+@media screen and (max-width: 576px){
+    .block_Text{
+        width: 100%;
+    }
+    .head {
+        width: 100%;
+    }
+    .Name {
+        width: 100%;
+    }
+    .Midddle {
+        width: 100%;
+    }
+}
+@import "import/keyframes.css";
+
