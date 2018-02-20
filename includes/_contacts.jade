@@ -1,0 +1,44 @@
+//- Task on Animation (waypoint)  1.34.45 L48
+//- !!!то что анимируем должно иметь по-умолчанию opacity: 0  !!!
+
+
+div.contacts
+	div.contactsHead
+		strong Get In Touch
+		br
+		p We are communicative and social
+	div#contactsMap
+		script.
+			function initMap() {var uluru = {lat: 50.4449024, lng: 30.5222704};
+			var map = new google.maps.Map(document.getElementById('contactsMap'), {zoom: 17,center: uluru});
+			var marker = new google.maps.Marker({position: uluru,map: map});}
+		script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ-kbdVBqC5LuNC3BxBFM3gFkI2eB3_vY&callback=initMap")
+	div.contactsBlock
+		div.contactsBlockSign
+			form
+				div.contactsBlockSignForm
+					input(type='text' class='contactsBlockSignFormPole1' placeholder='   Your name')
+					input(type='text' class='contactsBlockSignFormPole1' placeholder='   Your mail')
+					input(type='text' class='contactsBlockSignFormPole2' placeholder='   Subject')
+					input(type='text' class='contactsBlockSignFormPole3' placeholder='   Type message here ... ')
+					button.contactsBlockSignFormBtn SEND
+		div.contactsBlockInformation
+			div.contactsBlockInformationAddress
+				p.contactsBlockInformationTitle
+					strong Our Address
+				p.contactsBlockInformationText.
+					4896 Desert Broom Court
+					Newark, NJ 07102
+					United States
+			div.contactsBlockInformationAddress
+				p.contactsBlockInformationTitle
+					strong Email
+				p.contactsBlockInformationText modernomail@mail.com
+			div.contactsBlockInformationAddress
+				p.contactsBlockInformationTitle
+					strong Phone
+				p.contactsBlockInformationText +00 123-456-78900
+script.
+	$('.contactsHead').waypoint(function(){this.element.classList.add('animate_1200-992');}, {offset:"50%"});
+	$('.contactsBlockInformationAddress').waypoint(function(){this.element.classList.add('addressAppearAnimation');}, {offset:"90%"});
+script.

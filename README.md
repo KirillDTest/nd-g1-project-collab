@@ -1,1 +1,0 @@
-# nd-g1-project-collab
