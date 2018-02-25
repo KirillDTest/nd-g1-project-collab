@@ -1,0 +1,19 @@
+#services-container
+    .services-main-block
+        .services-block(style="height: 300px")
+            .services-circle(style="background-color: #fa694e; border: none;")
+                img(src="img/4.png")
+            h2.services-head_txt we are creative
+            p.services-info_txt Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus suscipit fugit doloremque quam nesciunt eveniet maiores reprehenderit?
+        .services-block
+            .services-circle
+                img(src="img/2.png")
+            h3.services-head_txt we have skills
+            p.services-info_txt Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        .services-block
+            .services-circle
+                img(src="img/3.png")
+            h3.services-head_txt we love to help
+            p.services-info_txt Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus suscipit fugit.
+script.
+ $('.services-info_txt').waypoint(function(){this.element.classList.add('addressAppearAnimation')}, {offset:"60%"});

@@ -1,0 +1,202 @@
+@import '_scroll.scss'
+
+.content
+	width: 1170px
+	height: 1360px
+	margin: 0 auto
+	box-sizing: border-box
+	font-family: 'Montserrat', sans-serif
+	background-color: #fbfbfb
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	@media screen and (max-width: 1200px)
+		width: 100%
+	@media screen and (max-width: 992px)
+		width: 100%
+
+.success
+	height: 150px
+	display: flex
+	align-items: center
+	justify-content: space-evenly
+	flex-direction: column
+	
+.success-head
+	font-size: 25px
+	font-weight: bold
+	opacity: 0
+
+.success-text
+	color: #999999
+	margin-top: -8px
+	font-family: 'Lora', serif;
+	font-size: 15px
+
+.project-form
+	width: 1170px
+	height: 350px
+	display: flex
+	border: 1px solid #cecece
+	box-sizing: border-box
+
+.project-image
+	width: 570px
+	background-color: #808080
+
+.project-view
+	width: 600px
+	padding: 30px
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+
+.project-view_head
+	font-size: 21px
+	font-weight: bold
+
+.project-view_text
+	font-family: 'Lora', serif;
+	font-size: 15px
+	margin-right: 20px
+	margin-top: -20px
+	color: #999999
+
+.view-button
+	width: 200px
+	height: 60px
+	background-color: #fa694e
+	color: white
+	border-radius: 5px
+	border: none
+
+.fa-times
+	font-size: 22px
+	margin-top: 16px
+	margin-right: 14px
+
+.pictures-block
+	width: 1170px
+	height: 786px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	padding-top: 78px
+	padding-bottom: 78px
+	box-sizing: border-box
+	align-content: space-between
+
+.pictures-block_element
+	height: 300px
+	width: 370px
+	background-color: #333333
+
+#pictures-block_element1
+	display: flex
+	justify-content: center
+	align-items: center
+
+.red_plus-block
+	width: 51px
+	height: 50px
+	background-color: #fa694e
+	border-radius: 4px
+
+.white_plus
+	color: white
+	font-size: 65px
+	margin-left: 6px
+	margin-top: -14px
+	font-weight: lighter
+
+@media(max-width: 982px)
+    .content    
+        margin-top: 215px
+        
+@media(max-width: 660px)
+    .content    
+        margin-top: 450px
+
+@media screen and (max-width: 1200px) and (min-width: 993px)
+  .project-form 
+    width: 100%
+  .pictures-block
+  	width: 100%
+  .content
+  	width: 95%
+  .pictures-block
+	  	height: 768px
+	  	padding-top: 45px
+  .pictures-block_element
+  	width: 300px
+
+@media screen and (max-width: 992px) and (min-width: 769px)
+  .content
+  	width: 90%
+  	height: 1450px
+  .project-form 
+    width: 100%
+  .pictures-block
+  	width: 100%
+  	height: 850px
+  	padding-bottom: 0
+  .pictures-block_element
+  	width: 329px
+  	height: 250px
+
+@media screen and (max-width: 768px) 
+  .success
+  	height: 150px
+  .content
+  	width: 90%
+  	height: 1300px
+  .project-form 
+    width: 100%
+  .pictures-block
+  	width: 100%
+  	height: 740px
+  	padding-top: 40px
+  	padding-bottom: 26px
+  .pictures-block_element
+  	width: 250px
+  	height: 210px
+  .project-view
+  	padding: 15px
+  .fa-times
+  	font-size: 16px
+
+@media screen and (max-width: 576px)
+  .content
+  	height: 2110px
+  .project-form
+  	flex-direction: column
+  	height: 560px
+  .project-view
+  	width: 90%
+  .project-image
+  	height: 250px
+  	width: 100%
+  .fa-times
+  	align-self: flex-end
+  	margin-top: 5px
+  .pictures-block
+  	height: 1400px
+  	padding-top: 20px
+  	justify-content: center
+  .pictures-block_element
+  	width: 290px
+  	height: 210px
+  .success-text
+  	width: 76%
+
+
+
+
+
+		
+
+		
+// and (min-width: 321px)
+		
+//@media screen and (max-width: 320px) 
+		

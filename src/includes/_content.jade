@@ -1,0 +1,28 @@
+div.content#content
+	div.success
+		p.success-head Success Stories
+		p.success-text We do awesome work, check some of success stories so far
+	div.project-form
+		div.project-image
+		div.project-view
+			p.project-view_head Lorem Ipsum Project
+			p.project-view_text.
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since 
+				the 1500s, when an unknown printer took a galley of type and scrambled it 
+				to make a type specimen book.
+			button.view-button View Project
+		i(class="fas fa-times")
+	div.pictures-block
+		div.pictures-block_element#pictures-block_element1
+			div.red_plus-block
+				p.white_plus +
+		div.pictures-block_element
+		div.pictures-block_element
+		div.pictures-block_element
+		div.pictures-block_element
+		div.pictures-block_element
+script.
+	$('.success-head').waypoint(function(){this.element.classList.add('addressAppearAnimation');}, {offset:"60%"});
+		
+	
