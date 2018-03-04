@@ -100,7 +100,8 @@ button {
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 400;
-    padding-left: 62px;
+    display: flex;
+    justify-content: center;
 }
 .bars {
     width:30px;
@@ -135,12 +136,12 @@ img {
         text-align: center;
     }
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 440px) {
     .Name {
         width: 100%;
     }
     .name_Text {
-        font-size: 60px;
+        font-size: 53px;
     }
 }
 @import "import/keyframes.css";

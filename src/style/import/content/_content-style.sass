@@ -21,6 +21,7 @@
 	align-items: center
 	justify-content: space-evenly
 	flex-direction: column
+	text-align: center
 	
 .success-head
 	font-size: 25px
@@ -50,10 +51,12 @@
 	display: flex
 	flex-direction: column
 	justify-content: space-around
+	text-align: center
 
 .project-view_head
 	font-size: 21px
 	font-weight: bold
+	margin-top: -15px
 
 .project-view_text
 	font-family: 'Lora', serif;
@@ -69,11 +72,15 @@
 	color: white
 	border-radius: 5px
 	border: none
+	display: flex
+	justify-content: center
 
 .fa-times
 	font-size: 22px
-	margin-top: 16px
-	margin-right: 14px
+	margin-top: -15px
+	width: 20px
+	cursor: pointer
+	align-self: flex-end
 
 .pictures-block
 	width: 1170px
@@ -86,21 +93,26 @@
 	box-sizing: border-box
 	align-content: space-between
 
-.pictures-block_element
-	height: 300px
-	width: 370px
-	background-color: #333333
-
-#pictures-block_element1
-	display: flex
-	justify-content: center
-	align-items: center
-
 .red_plus-block
 	width: 51px
 	height: 50px
 	background-color: #fa694e
 	border-radius: 4px
+	display: flex
+	justify-content: center
+	align-items: center
+	display: none
+
+.pictures-block_element
+	height: 300px
+	width: 370px
+	background-color: #333333
+	display: flex
+	justify-content: center
+	align-items: center
+
+.pictures-block_element:hover > .red_plus-block
+	display: block
 
 .white_plus
 	color: white
@@ -146,7 +158,7 @@
 
 @media screen and (max-width: 768px) 
   .success
-  	height: 150px
+  	height: auto
   .content
   	width: 90%
   	height: 1300px
@@ -157,6 +169,7 @@
   	height: 740px
   	padding-top: 40px
   	padding-bottom: 26px
+  	justify-content: space-around
   .pictures-block_element
   	width: 250px
   	height: 210px
@@ -173,6 +186,8 @@
   	height: 560px
   .project-view
   	width: 90%
+  .project-view > *
+  	margin-top: 15px
   .project-image
   	height: 250px
   	width: 100%
